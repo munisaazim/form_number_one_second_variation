@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
     font-family: 'Graphik';
     src: url('../font1/Graphik-Light.eot'),
@@ -43,11 +44,12 @@ body{
     margin-top: 100px;
 }
 .title{
-    
     line-height: 80px;
     margin: 0 auto;
     padding-bottom: 25px;
 }
+h1{
+    font-weight: bold;}
 input{
    border:none;
    position: relative;
@@ -63,4 +65,17 @@ hr{
     width: 200px;
     left:0px;
     margin-bottom: 30px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+
+}
+button{
+    width: 90px;
+    position: relative;
+    left: -60px;
+    border-radius: 30px;
+    padding: 10px 0px;
+
 }
