@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Graphik';
+    src: url('../font1/Graphik-Light.eot'),
+        url('../font1/Graphik-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font1/Graphik-Light.woff2') format('woff2'),
+        url('../font1/Graphik-Light.woff') format('woff'),
+        url('../font1/Graphik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+html{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+ 
+        font-family: 'Graphik';
+        font-weight: 300;
+        font-style: normal;
+    
+}
+.body{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.container{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    padding : 0 20px;
+}
+.contactInfo{
+    display: flex;
+    width: 100%;
+}
+.inputFields{
+    display:flex;
+    flex-direction: column;
+    width: 43%;
+    margin-left:8rem;
+    margin-top:9rem;  
+     margin-right:12rem;
+}
+.image{
+    width: 53%;
+    margin-right:8rem;
+   
+}
+img{
+    height: 700px;
+}
+h1{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 40px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+input{
+    margin: 25px 0px;
+    font-size:16px;
+    border:none;
+    border-bottom: 1px solid grey;
+    line-height:30px;
+    width: 100%;
+}
+button{
+    display:flex;
+    margin-top:15px;
+    color: white;
+    background-color: rgb(31, 182, 255);
+    border:none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 0px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: rgb(255, 102, 0);
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+}
+
+/*Span input one*/
+/* .inputOne{
+    margin-top:15px;
+} 
+ .inputTwo{
+    margin-top:0px;
+} */
+/* .inputThree{
+    margin-top:22px;
+} */
+/* .inputFour{
+    margin-top:22px;
+} */
+label{
+    margin:0px 0px 0px;
+}
+/* span.spanOne {
+    position: absolute;
+    left: 150px;
+    top:260px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s ease-out;
+} */
+/* span.spanOne{
+    position: relative;
+    top:-65px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s ease-out; 
+    transition: top 0.5s;
+} */
+input.inputOne:focus + span.spanOne {
+  /*  transform: translateY(-8px) scale(0.7); */
+  top:-75px;
+  font-size:10px;
+}
+input.inputOne:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+} 
+
+
+input:not(:placeholder-shown)+span.spanOne{
+    position: relative;
+    top:-65px;
+    pointer-events: none;
+  /*   transform-origin: left top;
+    transition: transform 0.25s ease-out; */
+    transition: top 0.5s;
+    font-size:10px;
+  }
+  input:placeholder-shown+span.spanOne {
+    display: none;
+  }
+
+/*Span two & input two*/
+/* span.spanTwo {
+    position: absolute;
+    left: 150px;
+    top:340px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s ease-out;
+}
+input.inputTwo:focus + span.spanTwo {
+   transform: translateY(-8px) scale(0.7);
+}
+input.inputTwo:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+} */
+input.inputTwo:focus+ span.spanTwo {
+  top:-75px;
+  font-size:10px;
+}
+input.inputTwo:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+} 
+input:not(:placeholder-shown)+span.spanTwo{
+    position: relative;
+    top:-65px;
+    pointer-events: none;
+    transition: top 0.5s;
+    font-size:10px;
+  }
+  input:placeholder-shown+span.spanTwo {
+    display: none;
+  }
+/*Span three & input three*/
+/* span.spanThree {
+    position: absolute;
+    left: 150px;
+    top:420px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s ease-out;
+}
+input.inputThree:focus + span.spanThree {
+   transform: translateY(-8px) scale(0.7);
+}
+input.inputThree:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+}
+input.inputTwo:focus+ span.spanTwo {
+  top:-75px;
+  font-size:10px;
+}
+input.inputTwo:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+} 
+input:not(:placeholder-shown)+span.spanTwo{
+    position: relative;
+    top:-65px;
+    pointer-events: none;
+    transition: top 0.5s;
+    font-size:10px;
+  }
+  input:placeholder-shown+span.spanTwo {
+    display: none;
+  } */
+  input.inputThree:focus+ span.spanThree {
+    top:-75px;
+    font-size:10px;
+  }
+  input.inputThree:focus{
+       outline: none;
+      border-bottom: 1px solid rgb(31, 182, 255);
+  } 
+  input:not(:placeholder-shown)+span.spanThree{
+      position: relative;
+      top:-65px;
+      pointer-events: none;
+      transition: top 0.5s;
+      font-size:10px;
+    }
+    input:placeholder-shown+span.spanThree{
+      display: none;
+    }
+
+/*Span four & input four*/
+/* span.spanFour {
+    position: absolute;
+    left: 150px;
+    top:500px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s ease-out;
+}
+input.inputFour:focus + span.spanFour {
+   transform: translateY(-8px) scale(0.7);
+}
+input.inputFour:focus{
+     outline: none;
+    border-bottom: 1px solid rgb(31, 182, 255);
+} */
+input.inputFour:focus+ span.spanFour {
+    top:-75px;
+    font-size:10px;
+  }
+  input.inputFour:focus{
+       outline: none;
+      border-bottom: 1px solid rgb(31, 182, 255);
+  } 
+  input:not(:placeholder-shown)+span.spanFour{
+      position: relative;
+      top:-65px;
+      pointer-events: none;
+      transition: top 0.5s;
+      font-size:10px;
+    }
+    input:placeholder-shown+span.spanFour{
+      display: none;
+    }
+@media(min-width:2570px){
+.contactInfo{
+    margin:0 auto;
+}
+}
