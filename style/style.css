@@ -35,3 +35,9 @@ body{
     max-width: 100%;
     min-height: 500px;
 }
+.contactInfo{
+    display: flex;
+    flex: 3 3 50%;
+    flex-flow: column;
+    justify-content: center;
+}
