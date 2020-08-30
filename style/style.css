@@ -22,22 +22,45 @@ body{
 }
 .container{
     position: absolute;
-    top: 50%;
+    top: 25%;
     width: 100%;
     display: flex;
     flex-flow: row-reverse;
 }
 .image{
-    flex: 1 1 50%;
+    flex: 1 1 48%;
 }
 .image img{
     vertical-align: top;
     max-width: 100%;
-    min-height: 500px;
+    transition: opacity 0.5s;
 }
 .contactInfo{
     display: flex;
     flex: 3 3 50%;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+.title{
+    
+    line-height: 80px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+input{
+   border:none;
+   position: relative;
+   left: -20px;
+   margin: 0 auto;
+
+   
+}
+hr{
+    border:none;
+    border-bottom:1px solid grey;
+    position: relative;
+    width: 200px;
+    left:0px;
+    margin-bottom: 30px;
 }
