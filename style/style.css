@@ -75,7 +75,18 @@ button{
     width: 90px;
     position: relative;
     left: -60px;
-    border-radius: 30px;
+    border-radius: 6px;
     padding: 10px 0px;
-
+    color: white;
+    background-color: rgb(31, 182, 255);
+    border:none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(255, 102, 0);
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
 }
