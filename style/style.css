@@ -35,18 +35,23 @@ body{
 .contactInfo{
     display: flex;
     width: 100%;
+    flex-wrap:wrap;
 }
 .inputFields{
     display:flex;
     flex-direction: column;
-    width: 43%;
+    width: 63%;
     margin-left:8rem;
     margin-top:9rem;  
      margin-right:12rem;
+     flex: 3;
+     flex-shrink: 3;
 }
 .image{
-    width: 53%;
+    width: 33%;
     margin-right:8rem;
+    flex:1;
+    flex-shrink: 1;
    
 }
 img{
@@ -289,4 +294,46 @@ input.inputFour:focus{
 .contactInfo{
     margin:0 auto;
 }
+}
+@media(max-width:954px){
+  img{
+      width: 400px;
+      height: 400px;
+      position: relative;
+      top: 14em;
+      margin-right:5rem;
+  }
+  img{
+      margin-right: 0rem;
+  }
+    }
+    @media(max-width:890px){
+        .contactInfo{
+            display: flex;
+           flex-direction: column;
+           width: 100%;
+        }
+        .inputFields{
+            width: 100%;
+            margin-left:15px;
+        }
+        input{
+            width: 83%;
+        }
+        .image{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-right:0rem;
+        }
+        img{
+            position: static;
+        }
+    }
+
+@media(max-width:494px){
+    img{
+        width: 200px;
+        height: 200px;
+    }
 }
