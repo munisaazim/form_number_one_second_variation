@@ -102,9 +102,9 @@ button:hover{
 /* .inputFour{
     margin-top:22px;
 } */
-label{
+/* label{
     margin:0px 0px 0px;
-}
+} */
 /* span.spanOne {
     position: absolute;
     left: 150px;
@@ -121,30 +121,27 @@ label{
     transition: transform 0.25s ease-out; 
     transition: top 0.5s;
 } */
-input.inputOne:focus + span.spanOne {
-  /*  transform: translateY(-8px) scale(0.7); */
+/* input.inputOne:focus + span.spanOne {
   top:-75px;
   font-size:10px;
 }
 input.inputOne:focus{
      outline: none;
     border-bottom: 1px solid rgb(31, 182, 255);
-} 
+}
 
 
 input:not(:placeholder-shown)+span.spanOne{
     position: relative;
     top:-65px;
     pointer-events: none;
-  /*   transform-origin: left top;
-    transition: transform 0.25s ease-out; */
     transition: top 0.5s;
     font-size:10px;
   }
   input:placeholder-shown+span.spanOne {
     display: none;
   }
-
+ */
 /*Span two & input two*/
 /* span.spanTwo {
     position: absolute;
@@ -161,7 +158,7 @@ input.inputTwo:focus{
      outline: none;
     border-bottom: 1px solid rgb(31, 182, 255);
 } */
-input.inputTwo:focus+ span.spanTwo {
+/* input.inputTwo:focus+ span.spanTwo {
   top:-75px;
   font-size:10px;
 }
@@ -178,7 +175,7 @@ input:not(:placeholder-shown)+span.spanTwo{
   }
   input:placeholder-shown+span.spanTwo {
     display: none;
-  }
+  } */
 /*Span three & input three*/
 /* span.spanThree {
     position: absolute;
@@ -213,7 +210,7 @@ input:not(:placeholder-shown)+span.spanTwo{
   input:placeholder-shown+span.spanTwo {
     display: none;
   } */
-  input.inputThree:focus+ span.spanThree {
+/*   input.inputThree:focus+ span.spanThree {
     top:-75px;
     font-size:10px;
   }
@@ -230,7 +227,7 @@ input:not(:placeholder-shown)+span.spanTwo{
     }
     input:placeholder-shown+span.spanThree{
       display: none;
-    }
+    } */
 
 /*Span four & input four*/
 /* span.spanFour {
@@ -248,7 +245,7 @@ input.inputFour:focus{
      outline: none;
     border-bottom: 1px solid rgb(31, 182, 255);
 } */
-input.inputFour:focus+ span.spanFour {
+/* input.inputFour:focus+ span.spanFour {
     top:-75px;
     font-size:10px;
   }
@@ -265,7 +262,29 @@ input.inputFour:focus+ span.spanFour {
     }
     input:placeholder-shown+span.spanFour{
       display: none;
-    }
+    } */
+
+    input:focus+ span {
+        top:-75px;
+        font-size:10px;
+      }
+      input:focus{
+           outline: none;
+          border-bottom: 1px solid rgb(31, 182, 255);
+      } 
+      input:not(:placeholder-shown)+span{
+          position: relative;
+          top:-65px;
+          pointer-events: none;
+          transition: top 0.5s;
+          font-size:10px;
+        }
+        input:placeholder-shown+span{
+          display: none;
+        }
+        label.labelTwo, label.labelThree, label.labelFour{
+            margin-top:-40px;
+          }
 @media(min-width:2570px){
 .contactInfo{
     margin:0 auto;
