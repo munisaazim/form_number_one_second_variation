@@ -342,6 +342,6 @@ input.inputFour:focus{
 @media(max-width:494px){
   img{
       height: 250px;
-      width: 300px;
+      width: 250px;
   }
 }
