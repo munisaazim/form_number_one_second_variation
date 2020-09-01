@@ -330,9 +330,7 @@ input.inputFour:focus{
             position: static;
         }
         input:not(:placeholder-shown)+span{
-            position: relative;
-            right: 640px;
-            top: -19px;
+           display: none;
           }
     }
 
